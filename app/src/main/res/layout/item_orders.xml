@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_bg"
+    android:layout_margin="2dp"
+    android:backgroundTint="@color/white"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order ID: PRA2134R45"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textColor="@color/BlackTextColor"
+            android:fontFamily="@font/bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3sp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:textColor="@color/gray_black"
+                android:fontFamily="@font/semi_bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placed"
+                android:textColor="@color/BlackTextColor"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="5dp"
+                android:id="@+id/orderStatus"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3sp"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: ₹1232.00 "
+                android:layout_weight="1"
+                android:textColor="@color/green_600"
+                android:fontFamily="@font/semi_bold"
+                android:id="@+id/totalOrderAmount"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date: 10-09-2022"
+                android:layout_weight="1"
+                android:textColor="@color/gray_black"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="5dp"
+                android:gravity="end"
+                android:id="@+id/orderDate"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonsLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.Material3.Button.UnelevatedButton"
+                app:cornerRadius="5dp"
+                app:elevation="0dp"
+                app:backgroundTint="#FBD294"
+                android:text="Order Details"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:textColor="@color/BlackTextColor"
+                android:fontFamily="@font/bold"
+                android:id="@+id/btnOrderDetails"
+                />
+
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                style="@style/Widget.Material3.Button.UnelevatedButton"-->
+<!--                app:cornerRadius="5dp"-->
+<!--                app:elevation="0dp"-->
+<!--                android:layout_marginStart="2dp"-->
+<!--                app:backgroundTint="#FBD294"-->
+<!--                android:text="Cancel"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/BlackTextColor"-->
+<!--                android:fontFamily="@font/bold"-->
+<!--                android:id="@+id/btnReject"-->
+<!--                />-->
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VegetableActivity"
+    android:orientation="vertical"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Upload Food"
+        android:background="@color/purple_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            >
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:src="@drawable/add"-->
+<!--                android:background="@android:color/darker_gray"-->
+<!--                android:padding="10dp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:id="@+id/productImage"-->
+<!--                />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/left"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imgPrevious"
+                    />
+
+
+                <ImageSwitcher
+                    android:layout_width="240dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageSwitcher"
+
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/right"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imgNext"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick Images"
+                android:textColor="@color/purple_500"
+                android:id="@+id/txtSelectedFiles"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:layout_marginTop="25dp"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/normal_black"
+                android:hint="Seller Name"
+                android:id="@+id/inputSellerName"
+                android:importantForAutofill="no"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:layout_marginTop="20dp"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:textColor="@color/normal_black"
+                android:hint="Product Name"
+                android:id="@+id/inputProductName"
+                android:importantForAutofill="no"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:gravity="top|start"
+                android:layout_marginTop="15dp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/normal_black"
+
+                android:hint="Product description"
+                android:id="@+id/inputDescription"
+                android:importantForAutofill="no"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:hint="Enter Quantity"
+                android:id="@+id/inputQuantity"
+                android:textColor="@color/normal_black"
+                android:importantForAutofill="no"
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:hint="Enter Price(₹)"
+                android:id="@+id/inputPrice"
+                android:textColor="@color/normal_black"
+                android:importantForAutofill="no"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:padding="14dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:hint="Available"
+                android:textSize="17sp"
+                android:textColor="@color/normal_black"
+                android:id="@+id/inputStock"
+                android:importantForAutofill="no"
+
+                />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="35dp"
+                app:backgroundTint="@color/orange"
+                android:textColor="@color/white"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+                android:textSize="18sp"
+                app:cornerRadius="8dp"
+                android:id="@+id/btnSubmit"
+                />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
